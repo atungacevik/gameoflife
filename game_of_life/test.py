@@ -15,12 +15,12 @@ def board_testing():
 
 
 def neighbour_tester():
-    neighbour_hood = [[False, True], [True, False]]
+    is_neighbour = [[False, True], [True, False]]
     result = [[2, 1], [1, 2]]
-    assert g_o_l.neighbour_finder(neighbour_hood) == result
+    assert g_o_l.neighbours_count(is_neighbour) == result
 
-    neighbour_hood = [[False, True, False],
+    is_neighbour = [[False, True, False],
                        [True, False, False],
                        [True, False, True]]
     result = [[2, 1, 1], [2, 4, 2], [1, 3, 0]]
-    assert g_o_l.neighbour_finder(neighbour_hood) == result
+    assert g_o_l.neighbours_count(is_neighbour) == result
