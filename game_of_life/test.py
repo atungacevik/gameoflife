@@ -5,13 +5,13 @@ def board_testing():
     row, col = 100, 100
 
     n, m = 10, 300
-    assert g_o_l.existential_check(n, m, row, col) == False
+    assert g_o_l.board_testing(n, m, row, col) == False
 
     n, m = -10, 100
-    assert g_o_l.existential_check(n, m, row, col) == False
+    assert g_o_l.board_testing(n, m, row, col) == False
 
     n, m = 100, 100
-    assert g_o_l.existential_check(n, m, row, col) == True
+    assert g_o_l.board_testing(n, m, row, col) == True
 
 
 def neighbour_tester():
